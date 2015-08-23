@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Организации">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <HBox prefHeight="571.0" prefWidth="1000.0">
+                           <children>
+                              <VBox prefHeight="571.0" prefWidth="1000.0">
+                                 <children>
+                                    <HBox prefHeight="35.0" prefWidth="1000.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" text="Д">
+                                             <HBox.margin>
+                                                <Insets left="3.0" top="3.0" />
+                                             </HBox.margin>
+                                          </Button>
+                                          <Button mnemonicParsing="false" text="Р">
+                                             <HBox.margin>
+                                                <Insets left="3.0" top="3.0" />
+                                             </HBox.margin>
+                                          </Button>
+                                          <Button mnemonicParsing="false" text="У">
+                                             <HBox.margin>
+                                                <Insets left="3.0" top="3.0" />
+                                             </HBox.margin>
+                                          </Button>
+                                          <Button mnemonicParsing="false" text="Сформировать документ">
+                                             <HBox.margin>
+                                                <Insets left="3.0" top="3.0" />
+                                             </HBox.margin>
+                                          </Button>
+                                          <TextField prefHeight="26.0" prefWidth="659.0">
+                                             <HBox.margin>
+                                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                             </HBox.margin>
+                                          </TextField>
+                                          <Button mnemonicParsing="false" text="Поиск">
+                                             <HBox.margin>
+                                                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                             </HBox.margin>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                    <TableView prefHeight="528.0" prefWidth="994.0">
+                                      <columns>
+                                        <TableColumn prefWidth="426.0" text="Наименование Организации" />
+                                        <TableColumn minWidth="0.0" prefWidth="282.0" text="БИК" />
+                                          <TableColumn prefWidth="290.0" text="Расчетный счет" />
+                                      </columns>
+                                       <VBox.margin>
+                                          <Insets left="3.0" right="3.0" />
+                                       </VBox.margin>
+                                    </TableView>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Услуги">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox prefHeight="570.0" prefWidth="1000.0">
+                           <children>
+                              <HBox prefHeight="35.0" prefWidth="1000.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Добавить">
+                                       <HBox.margin>
+                                          <Insets left="3.0" top="3.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button mnemonicParsing="false" text="Редактировать">
+                                       <HBox.margin>
+                                          <Insets left="3.0" top="3.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button mnemonicParsing="false" text="Удалить">
+                                       <HBox.margin>
+                                          <Insets left="3.0" right="3.0" top="3.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <TextField prefHeight="26.0" prefWidth="663.0">
+                                       <HBox.margin>
+                                          <Insets top="3.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Button mnemonicParsing="false" text="Поиск">
+                                       <HBox.margin>
+                                          <Insets left="3.0" top="3.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <TableView prefHeight="528.0" prefWidth="994.0">
+                                <columns>
+                                  <TableColumn prefWidth="483.0" text="Наименование Услуги" />
+                                  <TableColumn minWidth="0.0" prefWidth="155.0" text="Единица измерения" />
+                                    <TableColumn prefWidth="360.0" text="Цена за единицу" />
+                                </columns>
+                                 <VBox.margin>
+                                    <Insets bottom="3.0" left="3.0" right="3.0" />
+                                 </VBox.margin>
+                              </TableView>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
