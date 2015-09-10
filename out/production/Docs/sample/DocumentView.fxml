@@ -43,6 +43,11 @@
             </GridPane>
             <HBox alignment="TOP_RIGHT" prefHeight="32.0" prefWidth="509.0">
                <children>
+                  <Button mnemonicParsing="false" text="Сброс">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
                   <Button mnemonicParsing="false" text="Сформировать">
                      <HBox.margin>
                         <Insets right="3.0" />

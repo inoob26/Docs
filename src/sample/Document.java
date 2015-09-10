@@ -16,7 +16,7 @@ public class Document {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("DocumentView.fxml"));
             pStage = primaryStage;
-            pStage.setTitle("Docs");
+            pStage.setTitle("Формирование документа");
             pStage.setScene(new Scene(root));
             pStage.setResizable(false);
             pStage.show();

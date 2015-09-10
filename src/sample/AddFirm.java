@@ -17,7 +17,7 @@ public class AddFirm{
         try {
             Parent root = FXMLLoader.load(getClass().getResource("AddFirm.fxml"));
             pStage = primaryStage;
-            pStage.setTitle("Docs");
+            pStage.setTitle("Добавление новой организации");
             pStage.setScene(new Scene(root));
             pStage.setResizable(false);
             pStage.show();
