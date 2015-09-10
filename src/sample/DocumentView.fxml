@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="228.0" prefWidth="514.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainController">
+   <children>
+      <VBox prefHeight="232.0" prefWidth="509.0">
+         <children>
+            <GridPane hgap="5.0" prefHeight="189.0" prefWidth="561.0" vgap="5.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Дата:" />
+                  <DatePicker GridPane.columnIndex="1" />
+                  <Label text="Выбор оказаных услуг:" GridPane.rowIndex="1" />
+                  <Label text="Всего по счету" GridPane.rowIndex="2" />
+                  <Label contentDisplay="RIGHT" prefHeight="30.0" prefWidth="192.0" text="0.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label text="Всего по счету прописью" GridPane.rowIndex="3" />
+                  <TextField prefHeight="26.0" prefWidth="183.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Button alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" text="..." textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <CheckBox mnemonicParsing="false" text="АКТ выполненных работ" GridPane.rowIndex="4" />
+                  <CheckBox mnemonicParsing="false" text="Счет-фактура" GridPane.rowIndex="5" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="3.0" right="3.0" top="5.0" />
+               </VBox.margin>
+            </GridPane>
+            <HBox alignment="TOP_RIGHT" prefHeight="32.0" prefWidth="509.0">
+               <children>
+                  <Button mnemonicParsing="false" text="Сформировать">
+                     <HBox.margin>
+                        <Insets right="3.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
