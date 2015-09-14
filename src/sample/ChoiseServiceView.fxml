@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ServiceController">
+   <children>
+      <VBox prefHeight="240.0" prefWidth="600.0">
+         <children>
+            <TableView prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn prefWidth="215.0" text="Наименование услуги" />
+                <TableColumn minWidth="0.0" prefWidth="131.0" text="Цена за единицу" />
+                  <TableColumn prefWidth="99.0" text="Кол-во" />
+                  <TableColumn prefWidth="154.0" text="Сумма" />
+              </columns>
+            </TableView>
+            <HBox alignment="CENTER" prefHeight="30.0" prefWidth="594.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#ShowListOfServiceView" text="Добавить услугу в список" />
+                  <Button mnemonicParsing="false" text="Удалить услугу из списка">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" text="Вернутся и сохранить">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -4,21 +4,23 @@ import javafx.fxml.FXML;
 import javafx.stage.Stage;
 
 /**
- * Created by inoob on 07/09/15.
+ * Created by inoob on 14/09/15.
  */
-public class DocumentController {
+public class ServiceController {
 
     private Service service;
 
+
+
     @FXML
-    protected void ShowChoiceServiceView() {
+    protected void ShowListOfServiceView() {
         try {
-            Stage st_choise_service = new Stage();
+            Stage st_list_service = new Stage();
             if(service == null) {
                 service = new Service();
-                service.show_choice(st_choise_service);
+                service.show_list(st_list_service);
             } else {
-                service.show_choice(st_choise_service);
+                service.show_list(st_list_service);
             }
         } catch (Exception e) {
             e.printStackTrace();

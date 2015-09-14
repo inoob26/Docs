@@ -10,6 +10,8 @@ import javafx.stage.Stage;
  */
 public class Document {
 
+
+
     Stage pStage;
 
     public void show(Stage primaryStage){
@@ -24,5 +26,7 @@ public class Document {
             ex.printStackTrace();
         }
     }
+
+
 
 }

@@ -5,7 +5,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="228.0" prefWidth="514.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="228.0" prefWidth="514.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DocumentController">
    <children>
       <VBox prefHeight="232.0" prefWidth="509.0">
          <children>
@@ -30,7 +30,7 @@
                   <Label contentDisplay="RIGHT" prefHeight="30.0" prefWidth="192.0" text="0.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                   <Label text="Всего по счету прописью" GridPane.rowIndex="3" />
                   <TextField prefHeight="26.0" prefWidth="183.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                  <Button alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" text="..." textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#ShowChoiceServiceView" text="..." textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                   <CheckBox mnemonicParsing="false" text="АКТ выполненных работ" GridPane.rowIndex="4" />
                   <CheckBox mnemonicParsing="false" text="Счет-фактура" GridPane.rowIndex="5" />
                </children>
@@ -43,7 +43,7 @@
             </GridPane>
             <HBox alignment="TOP_RIGHT" prefHeight="32.0" prefWidth="509.0">
                <children>
-                  <Button mnemonicParsing="false" text="Сброс">
+                  <Button mnemonicParsing="false" text="Сбросить">
                      <HBox.margin>
                         <Insets right="5.0" />
                      </HBox.margin>
